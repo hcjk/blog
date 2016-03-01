@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="home">
+	<section>
+		<h2 class="smallcap">about</h2>
+		<p><a href="/">d.reams</a> is the blog and thoughts of <a href="https://henrykaufman.me">Henry Kaufman</a>, a fullstack developer and entrepreneur from Denver, Colorado. He is a freelance designer and developer, who loves to build <i>cool</i> web projects! Make sure to follow him on <a href="https://twitter.com/kaufmanhenry">@kaufmanhenry</a>.</p>
+	</section>
+	<section>
+		<h2 class="smallcap">posts</h2>
+		<ul class="post-list">
+			{% for post in site.posts limit:5 %}
+			<li>
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
+	</section>
+</div>
