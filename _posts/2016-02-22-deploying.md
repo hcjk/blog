@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Deploy My Applications"
-date:   2016-02-14 00:00:00 -0700
+date:   2016-02-22 00:00:00 -0700
 ---
 
 An incredibly important part of the development process is deployment of your applications. When I deploy my applications, I deploy on [Digital Ocean](http://digitalocean.com). I use two pieces of technology to ensure a smooth deploy, [nginx](http://nginx.com) and [forever](https://www.npmjs.com/package/forever).

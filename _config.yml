@@ -1,7 +1,7 @@
 # Site settings
-title: d.reams
+title: Journal
 baseurl: ""
-url: "http://d.reams.org"
+url: "http://journal.henrykaufman.me"
 
 # Build settings
 kramdown:
