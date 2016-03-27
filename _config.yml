@@ -10,5 +10,5 @@ permalink: pretty
 
 # Third-party services
 # just leave someone empty to disable it
-google_analytics: 
+google_analytics: UA-64318963-6
 disqus_shortname: 
