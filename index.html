@@ -3,19 +3,13 @@ layout: default
 ---
 <div class="home">
 	<section>
-		<h2 class="smallcap">About</h2>
-		<p><a href="/">This</a> is the blog and thoughts of <a href="https://henrykaufman.me">Henry Kaufman</a>, a designer and fullstack developer from Denver, Colorado. He enjoys building <i>cool</i> web projects! Make sure to follow him on <a href="https://twitter.com/kaufmanhenry">@kaufmanhenry</a>, and reach out to him if you have any questions.</p>
-	</section>
-	<section>
-		<h2 class="smallcap">Posts</h2>
 		<ul class="post-list">
-			{% for post in site.posts limit:5 %}
+			{% for post in site.posts %}
 			<li>
 				<span>{{ post.date | date: "%b %d, %Y" }}</span>
 				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</li>
 			{% endfor %}
 		</ul>
-		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
 	</section>
 </div>

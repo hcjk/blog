@@ -1,3 +1,6 @@
+* {
+    transition: all 0.3s ease;
+}
 /**
  * Site header
  */
@@ -6,21 +9,17 @@
     text-align: center;
     padding: 1rem 0;
 }
-
 .site-title {
-    font-size: 1.5rem;
+    font-size: 1em;
+    letter-spacing: 2px;
     font-weight: 300;
-    letter-spacing: -1px;
     color: $grey-color-dark;
-
+    text-transform: uppercase;
     &,
     &:hover {
         text-decoration: none;
     }
 }
-
-
-
 /**
  * Page content
  */
@@ -31,8 +30,6 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
-
 /**
  * Pages
  */
@@ -41,10 +38,8 @@
         margin-top: $spacing-unit;
     }
 }
-
 .post-list > li {
     margin-bottom: $spacing-unit / 4;
-
     @include media-query($on-palm) {
         span {
             display: block;
@@ -52,48 +47,56 @@
         }
     }
 }
-
-
-
+.post-list li {
+    padding: 10px 0;
+    list-style: none;
+}
+.post-list li a {
+    display: block;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.post-list li a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
 /**
  * Posts
  */
 .post-header {
     margin-bottom: $spacing-unit;
 }
-
 .post-title {
     font-size: 2rem;
     letter-spacing: -1px;
     line-height: 1;
 }
-
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
-
 .post-content {
     margin-bottom: $spacing-unit;
-
-    h1, h2, h3,
-    h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-top: 2rem;
     }
-
     h1,
     h2 {
         font-size: 2rem;
     }
-
     h3 {
         font-size: 1.5rem;
     }
-
     h4 {
         font-size: 1.25rem;
     }
-
     h5,
     h6 {
         font-size: 1rem;
