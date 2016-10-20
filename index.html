@@ -5,9 +5,11 @@ layout: default
 	<section>
 		<ul class="post-list">
 			{% for post in site.posts %}
-			<li>
-				<span>{{ post.date | date: "%b %d, %Y" }}</span>
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			<li class="post-header" style='background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url({{post.img}})'>
+				<div class="post-header-content">
+					<span>{{ post.date | date: "%b %d, %Y" }}</span>
+					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</div>
 			</li>
 			{% endfor %}
 		</ul>

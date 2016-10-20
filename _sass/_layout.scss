@@ -1,19 +1,22 @@
 * {
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 /**
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
     text-align: center;
     padding: 1rem 0;
+    p {
+        font-size: 12px;
+        color: $grey-color;
+    }
 }
 .site-title {
     font-size: 1em;
     letter-spacing: 4px;
     font-weight: 400;
-    color: $grey-color-dark;
+    color: $brand-color;
     text-transform: uppercase;
     &,
     &:hover {
@@ -24,11 +27,7 @@
  * Page content
  */
 .page-content {
-    position: relative;
-    max-width: 48rem;
-    padding: $spacing-unit ($spacing-unit * 0.75);
-    margin: 0 auto;
-    box-sizing: border-box;
+
 }
 /**
  * Pages
@@ -50,13 +49,18 @@
 .post-list li {
     padding: 10px 0;
     list-style: none;
+    span {
+        color: rgba(255, 255, 255, .7);
+        font-weight: bold;
+        font-size: 12px;
+    }
 }
 .post-list li a {
     display: block;
     list-style: none;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
 .post-list li a:hover {
     color: #aaa;
@@ -67,17 +71,31 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover !important;
+    .post-header-content {
+        width: 48rem;
+        margin: 0 auto;
+    }
 }
 .post-title {
-    font-size: 2rem;
+    color: #fff;
+    font-size: 3em;
     letter-spacing: -1px;
     line-height: 1;
 }
 .post-meta {
+    color: rgba(255, 255, 255, .7);
     font-size: $small-font-size;
-    color: $grey-color;
 }
 .post-content {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    box-sizing: border-box;
     margin-bottom: $spacing-unit;
     h1,
     h2,
@@ -101,4 +119,8 @@
     h6 {
         font-size: 1rem;
     }
+}
+footer {
+    font-size: $small-font-size;
+    text-align: center;
 }

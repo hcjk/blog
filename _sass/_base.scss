@@ -58,13 +58,6 @@ figcaption {
 
 
 
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
 li {
     > ul,
     > ol {
@@ -78,7 +71,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+    font-weight: bold;
 }
 
 
@@ -178,7 +171,7 @@ td {
 hr {
     width: 30%;
     border: none;
-    border-top: 1px solid lighten($brand-color, 30%);;
+    border-top: 1px solid $grey-color-light;
     margin: $spacing-unit auto;
 }
 
