@@ -38,7 +38,7 @@
     }
 }
 .post-list > li {
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: 0;
     @include media-query($on-palm) {
         span {
             display: block;
@@ -47,7 +47,6 @@
     }
 }
 .post-list li {
-    padding: 10px 0;
     list-style: none;
     span {
         color: rgba(255, 255, 255, .7);
@@ -77,7 +76,8 @@
     justify-content: center;
     background-size: cover !important;
     .post-header-content {
-        width: 48rem;
+        width:90%;
+        max-width: 48rem;
         margin: 0 auto;
     }
 }
@@ -93,6 +93,7 @@
 }
 .post-content {
     position: relative;
+    width:90%;
     max-width: 48rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -123,4 +124,5 @@
 footer {
     font-size: $small-font-size;
     text-align: center;
+    padding: $spacing-unit*2;
 }
